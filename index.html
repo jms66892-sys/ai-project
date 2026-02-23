@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AI 프로젝트</title>
+<title>클릭 게임</title>
 </head>
-<body>
-    <h1>AI 윤리 프로젝트</h1>
-    <p>이 사이트는 중학교 3학년 기술 수업에서 제작되었습니다.</p>
+<body style="text-align:center; font-family:Arial;">
+
+<h1>10초 동안 버튼을 얼마나 많이 누를 수 있을까?</h1>
+<button onclick="score++">클릭!</button>
+<p>점수: <span id="score">0</span></p>
+
+<script>
+let score = 0;
+let time = 10;
+
+setInterval(() => {
+  document.getElementById("score").innerText = score;
+}, 100);
+
+setTimeout(() => {
+  alert("게임 끝! 점수는 " + score);
+}, 10000);
+</script>
+
 </body>
 </html>
