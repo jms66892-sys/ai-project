@@ -5,13 +5,13 @@
 </head>
 <body style="text-align:center; font-family:Arial;">
 
-<h1>10초 동안 버튼을 얼마나 많이 누를 수 있을까?</h1>
+<h1>12초 동안 버튼을 얼마나 많이 누를 수 있을까?</h1>
 <button onclick="score++">클릭!</button>
 <p>점수: <span id="score">0</span></p>
 
 <script>
 let score = 0;
-let time = 10;
+let time = 12;
 
 setInterval(() => {
   document.getElementById("score").innerText = score;
